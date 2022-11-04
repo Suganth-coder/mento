@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Form</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
-<div class="universe">
-  <div class="universe-container">
-    <div class="content">
-      <canvas id="universe"></canvas>
-      <div id="footer">
-        <svg id="scene" x="0px" y="0px" width="1600px" height="315px">
+    <div class="universe">
+        <div class="universe-container">
+            <div class="content">
+                <canvas id="universe"></canvas>
+                <div id="footer">
+                    <svg id="scene" x="0px" y="0px" width="1600px" height="315px">
           <path id="ground" d="M0,316.4209c0,0,157.7119-35.416,469-56c7.3833-0.4883,23.7876-3.5488,31.3335-4.0166
                     c3.7681-0.2334,19.4302,0.9424,28.3335,0.3506c17.1494-1.1396,30.9072-4.2734,38.333-4.6836
                     c7.5972-0.4189,18.4058,0.3799,27.6665-0.9834c5.7075-0.8408,10.1318-4.042,14.9248-4.2705
@@ -120,78 +122,68 @@
             </g>
           </g>
         </svg>
-      </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!--    Form Section Begins -->
-<div class="content">
-  <div class="text">Fill out the form!</div>
-  <br>
-   <form action="#">
-     <div class="field">
-       <input class="ipn" type="text" placeholder="Milestone 1" required="">
-     </div>
-     <label for="start">DeadLine:</label>
-     <input type="date" id="start" name="trip-start"
-       value=""
-       min="2018-01-01" max="2018-12-31">
-     
-     <br>
-     <div class="field">
-       <input class="ipn" type="text" placeholder="Milestone 2" required="">
-     </div>
-     <label for="start">DeadLine:</label>
-     <input type="date" id="start" name="trip-start"
-       value=""
-       min="2018-01-01" max="2018-12-31">
-     
-     <br>
-     <div class="field">
-      <input class="ipn" type="text" placeholder="Milestone 3" required="">
+    <!--    Form Section Begins -->
+    <div class="content">
+        <div class="text">Fill out the form!</div>
+        <br>
+        <form action="#">
+            <div class="field">
+                <input class="ipn m1" type="text" placeholder="Milestone 1" required="">
+            </div>
+            <label for="start">DeadLine:</label>
+            <input type="date" id="d1" name="trip-start" value="" min="2025-01-01" max="2025-12-31">
+
+            <br>
+            <div class="field">
+                <input class="ipn m2" type="text" placeholder="Milestone 2" required="">
+            </div>
+            <label for="start">DeadLine:</label>
+            <input type="date" id="start" name="trip-start" value="" min="2025-01-01" max="2025-12-31">
+
+            <br>
+            <div class="field">
+                <input class="ipn m3" type="text" placeholder="Milestone 3" required="">
+            </div>
+            <label for="start">DeadLine:</label>
+            <input type="date" id="start" name="trip-start" value="" min="2025-01-01" max="2025-12-31">
+
+            <br>
+            <div class="field">
+                <input class="ipn m4" type="text" placeholder="Milestone 4" required="">
+            </div>
+            <label for="start">DeadLine:</label>
+            <input type="date" id="start" name="trip-start" value="" min="2025-01-01" max="2025-12-31">
+
+            <br>
+            <div class="field">
+                <input class="ipn m5" type="text" placeholder="Milestone 5" required="">
+            </div>
+            <label for="start">DeadLine:</label>
+            <input type="date" id="start" name="trip-start" value="" min="2025-01-01" max="2025-12-31">
+
+            <br>
+            <div class="field">
+                <input class="ipn m6" type="text" placeholder="Milestone 6" required="">
+            </div>
+            <label for="start">DeadLine:</label>
+            <input type="date" id="start" name="trip-start" value="" min="2025-01-01" max="2025-12-31">
+            <br>
+            <br>
+            <button class="form_submit"><b>Submit</b></button>
+        </form>
     </div>
-    <label for="start">DeadLine:</label>
-     <input type="date" id="start" name="trip-start"
-       value=""
-       min="2018-01-01" max="2018-12-31">
-     
-    <br>
-    <div class="field">
-      <input class="ipn" type="text" placeholder="Milestone 4" required="">
-    </div>
-    <label for="start">DeadLine:</label>
-     <input type="date" id="start" name="trip-start"
-       value=""
-       min="2018-01-01" max="2018-12-31">
-     
-    <br>
-    <div class="field">
-      <input class="ipn" type="text" placeholder="Milestone 5" required="">
-    </div>
-    <label for="start">DeadLine:</label>
-     <input type="date" id="start" name="trip-start"
-       value=""
-       min="2018-01-01" max="2018-12-31">
-     
-    <br>
-    <div class="field">
-      <input class="ipn" type="text" placeholder="Milestone 6" required="">
-    </div>
-    <label for="start">DeadLine:</label>
-     <input type="date" id="start" name="trip-start"
-       value=""
-       min="2018-01-01" max="2018-12-31">
-     <br>
-     <br>
-    <button><b>Submit</b></button>
-   </form>
- </div>
- 
 
 
 
-  <script src='https://use.fontawesome.com/62ad67e303.js'></script><script  src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='https://use.fontawesome.com/62ad67e303.js'></script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>
