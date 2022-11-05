@@ -3,7 +3,10 @@ let speed = 100;
 
 
 $.get("http://localhost:8080/challenge/get_mento/test", function(data, status) {
-    console.log(data.data.m1);
+    console.log(data.data['m1']);
+    for (let i = 1; i <= 6; i++) {
+        $('#m' + i).text(data.data['m' + i]);
+    }
 });
 
 /*  SCENE 1 */

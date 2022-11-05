@@ -164,7 +164,12 @@ $('.form_submit').click(function() {
     $.get("http://0.0.0.0:8080/challenge/store/" +
         $('.m1').val() + "/" + $('.m2').val() + "/" + $('.m3').val() + "/" + $('.m4').val() + "/" + $('.m5').val() + "/" + $('.m6').val() + "/test/",
         function(data, status) {
-            alert("Data: " + data + "\nStatus: " + status);
+            if (data == 200) {
+                alert('Successfully created the milestones');
+                window.location.href = '../challenge/index.html';
+            } else {
+                alert('error in adding the data');
+            }
         });
 
 })

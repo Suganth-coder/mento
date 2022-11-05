@@ -50,7 +50,7 @@
                     <path
                         d="M448.773 235.551A135.893 135.893 0 00451 211c0-74.443-60.557-135-135-135-47.52 0-91.567 25.313-115.766 65.537-32.666-10.59-66.182-6.049-93.794 12.979-27.612 19.013-44.092 49.116-45.425 82.031C24.716 253.788 0 290.497 0 331c0 7.031 1.703 13.887 3.006 20.537l.015.015C12.719 400.492 56.034 436 106 436h300c57.891 0 106-47.109 106-105 0-40.942-25.053-77.798-63.227-95.449z" />
                 </svg>
-                <img class="profile-img" src="/images/robo.png" alt="">
+                <img class="profile-img" src="../images/robo.png" alt="">
             </div>
         </div>
         <div class="wrapper">
@@ -139,7 +139,7 @@
                                 Mento
                             </h3>
                             <div class="content-text">"Alone we can do little.<br> Together we can do so much."</div><br>
-                            <button class="content-button status-button">Go to classroom</button>
+                            <button class="content-button status-button track">Go to Tracking</button>
                             <button class="content-button status-button">Pick a mentor</button>
                         </div>
                         <!-- <img class="content-wrapper-img" src="https://assets.codepen.io/3364143/glass.png" alt=""> -->
@@ -149,7 +149,7 @@
                         <ul>
                             <li class="adobe-product">
                                 <div class="products">
-                                    <img class="profile-img" src="/images/subu.png" alt="">
+                                    <img class="profile-img" src="../images/subu.png" alt="">
                                     <g xmlns="http://www.w3.org/2000/svg">
                                         <path d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z" fill="#061e26" data-original="#393687" />
                                         <!-- <path 
@@ -177,7 +177,7 @@
                             </li>
                             <li class="adobe-product">
                                 <div class="products">
-                                    <img class="profile-img" src="/images/sibi.png" alt="">
+                                    <img class="profile-img" src="../images/sibi.png" alt="">
                                     <g xmlns="http://www.w3.org/2000/svg">
                                         <path d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z" fill="#261400" data-original="#6d4c13" /> -->
                                         <!-- <path
@@ -210,7 +210,7 @@
                             </li>
                             <li class="adobe-product">
                                 <div class="products">
-                                    <img class="profile-img" src="/images/gautam.png" alt="">
+                                    <img class="profile-img" src="../images/gautam.png" alt="">
                                     <g xmlns="http://www.w3.org/2000/svg">
                                         <path d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z" fill="#3a3375" data-original="#3a3375" />
                                         <!-- <path
@@ -243,7 +243,7 @@
                         <div class="apps-card">
                             <div class="app-card">
                                 <span>
-                                    <img class="profile-img" src="/images/data.png" alt="">
+                                    <img class="profile-img" src="../images/data.png" alt="">
                                     <path xmlns="http://www.w3.org/2000/svg"
                                         d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
                                         fill="#210027" data-original="#7b1fa2" />
@@ -263,7 +263,7 @@
                             </div>
                             <div class="app-card">
                                 <span>
-                                    <img class="profile-img" src="/images/full.png" alt="">
+                                    <img class="profile-img" src="../images/full.png" alt="">
 
                                     Full Stack Engineering
                                 </span>
@@ -276,7 +276,7 @@
                             </div>
                             <div class="app-card">
                                 <span>
-                                    <img class="profile-img" src="/images/cloud1.png" alt="">
+                                    <img class="profile-img" src="../images/cloud1.png" alt="">
                                     <g xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M40.824 52H11.176C5.003 52 0 46.997 0 40.824V11.176C0 5.003 5.003 0 11.176 0h29.649C46.997 0 52 5.003 52 11.176v29.649C52 46.997 46.997 52 40.824 52z"
@@ -315,6 +315,13 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="../js/chart.js"></script>
 
+    <script>
+        $(window).ready(function() {
+            $('.track').click(function() {
+                window.location.href = './challenge_login/index.html';
+            })
+        })
+    </script>
 </body>
 
 </html>
