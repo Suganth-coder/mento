@@ -152,18 +152,19 @@ function windowResizeHandler() {
 // Connection Part
 $('.form_submit').click(function() {
 
-    $.post("http://0.0.0.0:8080", {
-            "username": "Hari",
-            "mentor_name": "Sibidharan",
-            "m_n": 0,
-            "m1": $('.m1').text(),
-            "m2": $('.m2').text(),
-            "m3": $('.m3').text(),
-            "m4": $('.m4').text(),
-            "m5": $('.m5').text(),
-            "m6": $('.m6').text()
-        },
+    console.log($('.m1').val());
+    console.log($('.m1').val());
+    console.log($('.m2').val());
+    console.log($('.m3').val());
+    console.log($('.m4').val());
+    console.log($('.m5').val());
+    console.log($('.m6').val());
+
+
+    $.get("http://0.0.0.0:8080/challenge/store/" +
+        $('.m1').val() + "/" + $('.m2').val() + "/" + $('.m3').val() + "/" + $('.m4').val() + "/" + $('.m5').val() + "/" + $('.m6').val() + "/test/",
         function(data, status) {
-            console.log($('.m1').text());
+            alert("Data: " + data + "\nStatus: " + status);
         });
+
 })

@@ -1,6 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 let speed = 100;
 
+
+$.get("http://localhost:8080/challenge/get_mento/test", function(data, status) {
+    console.log(data.data.m1);
+});
+
 /*  SCENE 1 */
 let scene1 = gsap.timeline();
 ScrollTrigger.create({
