@@ -1,7 +1,19 @@
 $(document).ready(function() {
 
     $('.submit').click(function() {
-        window.location.href = '../login.html';
+
+
+        if (check_passw() != 200) { alert("Password does not match"); return; }
+        if (verify_validatation() == 0) { alert("Your password is too weak"); return; }
+        if (true) {
+            $.get("http://localhost:8080/signup/" + $('.uname').val() + "/" + $('.email').val() + "/" + $('.passw').val() + "/" + $('.retype_passw').val(), function(data, status) {
+                alert(data['status']);
+                if (data['code'] == 200) {
+                    window.location.href = '../login.html';
+                }
+            });
+        }
+
     })
 
     $('#contact_form').bootstrapValidator({
@@ -124,3 +136,27 @@ $(document).ready(function() {
             }, 'json');
         });
 });
+
+function check_passw() {
+    let passw = $(".passw").val();
+    let re_passw = $('.retype_passw').val();
+
+    if (passw == re_passw) return 200
+    else return 400
+}
+
+
+function verify_validatation() {
+
+    let password = $(".passw").val();
+    let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+    let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+
+    if (strongPassword.test(password)) {
+        return 1
+    } else if (mediumPassword.test(password)) {
+        return 1
+    } else {
+        return 0
+    }
+}
